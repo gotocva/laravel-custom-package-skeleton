@@ -49,4 +49,4 @@ The :license_shortname. Please see [License File](LICENSE.md) for more informati
 
 ## Laravel Package Boilerplate
 
-This package was generated using the [Laravel Package Boilerplate](https://laravelpackageboilerplate.com).
+This package was generated using the [Sparkout Boilerplate Generator](https://developer.sparkouttech.com).
