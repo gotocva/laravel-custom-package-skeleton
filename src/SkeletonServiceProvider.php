@@ -21,7 +21,7 @@ class :studly_package_nameServiceProvider extends ServiceProvider
 
         if ($this->app->runningInConsole()) {
             $this->publishes([
-                __DIR__.'/../config/config.php' => config_path(':package_name.php'),
+                __DIR__.'/config/config.php' => config_path(':package_name.php'),
             ], 'config');
 
             // Publishing the views.
@@ -50,7 +50,7 @@ class :studly_package_nameServiceProvider extends ServiceProvider
     public function register()
     {
         // Automatically apply the package configuration
-        $this->mergeConfigFrom(__DIR__.'/../config/config.php', ':package_name');
+        $this->mergeConfigFrom(__DIR__.'/config/config.php', ':package_name');
 
         // Register the main class to use with the facade
         $this->app->singleton(':package_name', function () {
